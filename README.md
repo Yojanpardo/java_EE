@@ -36,3 +36,15 @@ No es considerado un servidor de aplicaciones, es un contenedor de aplicaciones 
 ## JSP
 Java Server Pages, son las páginas compuestas de html, js y css, a demás puede contener código de java, para poder ejecutarlo necesitamos tener apache tomcat instalado.
 
+## Servelet
+Es una clase que hereda métodos de la clase HttpServlet, una vez heredados tiene la capacidad de manejar cualquier tipo de request, para identificarlo puedes ubicar dentro del código sus métodos doGet o doPost o atraves de su anotación (@WebServlet) + el nombre que le quieras dar como URL.
+
+## BEAN 
+Sirven para modelar un objeto con sus atributos y métodos, sus propiedades deben ser accesibles por getters y setters y deben ser serializables para permitir el acceso a ellos a traves de peticiones http.
+
+## MVC
+Podemos utilizar el Modelo Vista Controlador para generar nuestros proyectos en java en donde veremos que la vista está dada por el HTML o los archivos JSP, los modelos estarán dados por nuestras clases de java y los controladores son nuestros BEANs.  
+Para estos primeros intentos voy a hacer el repositorio de [hola_mundo_jsp](https://github.com/Yojanpardo/hola_mundo_jsp.git) en donde muestro mi primer pequeño proyecto con JSP.
+
+## WAR
+Es el tipo de empaquetado utilizado por Java EE para desplegar aplicaciones web sin tener que exponer el código que hemos creado.  
