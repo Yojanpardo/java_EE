@@ -48,3 +48,29 @@ Para estos primeros intentos voy a hacer el repositorio de [hola_mundo_jsp](http
 
 ## WAR
 Es el tipo de empaquetado utilizado por Java EE para desplegar aplicaciones web sin tener que exponer el código que hemos creado.  
+Para crear este empaquetado debemos ir a nuestro IDE, hacemos clic derecho sobre nuestro proyecto, le damos clic en exportar->WAR file y luego lo ponemos en producción en nuestro servidor importando nuestro WRA file.
+
+## Asistentes inteligente Maven
+Los asistentes insteligentes nos ayudan a trabajar sobre plantillas para facilitar el trabajo, descargar librerias de terceros, cerar todos los componentes y archivos ejecutables.  
+Maven es un asistente inteligente que nos va a ayudar a hacer todo a partir de XML ya que describe el proyecto a construir, Dependencias, Compilación del código y Empaquetado.  
+De esta manera nosotros como desarrolladores solo tendremos que enfocarnos en la creación del código y no perder tiempo haciendo estas tareas tan repetitivas.
+
+## Gradle
+Está basado en Groovy que es un lenguaje orientado a objetos y usa la sintaxis Domain Specified Language - Json
+~~~
+static mapping = {
+    table 'person'
+    columns {
+        name column:'name'
+    }
+}
+~~~
+Esto debe ir en un archivo llamado build.gradle
+que va a contener las dependencias, compilación del código y empaquetado.
+
+## Aplicaciones orientadas a presentacion vs servicios
+Los proyectos tradicionales son orientados a presentación pero necesitamos hacer una aplicacion orientada a servicios para poder desarrollar una Rest API  en la cual se va a cambiar la esquematización de un proyecto y poder accesarlo desde una página web o una aplicación movil de una forma más sencilla.
+
+## Spring Toll Suite
+Es el nuevo IDE que utilizaremos para la creación de nuestro proyecto, viene con la integración de Maven, creado por la comunidad SpringSource.  
+Para descargar este IDE debemos dirigirnos a la [página de Spring](https://spring.io/tools) 
